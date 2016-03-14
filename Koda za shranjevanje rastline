@@ -1,0 +1,55 @@
+private void NewPolygon_Tapped(object sender, TappedRoutedEventArgs e)	//ob zazanem kliku na poligon se izvede naslednje
+{
+	Polygon polygon = sender as Polygon;
+	if (polygon != null)
+	{
+
+		int y = 0;
+		int barva = 0;
+
+		for (int x = 0; ; x++)	//ugotovimo kateri poligon je izbran
+		{
+			barva++;
+
+			if (x == razdeliX)	//pazi da ne uidemo v inf. loop
+			{
+				x = 0;
+				y++;
+			}
+
+			if (y == razdeliY)	//pazi da ne uidemo v inf. loop
+			{
+				break;
+			}
+
+			if (barva == (int)polygon.Tag)	//iskanje pravega poligona
+			{
+				Point tocka0 = new Point(ZnacilnostiVrta.koordinati_shranjeni[0, x] + pomaknjenx, ZnacilnostiVrta.koordinati_shranjeni[y, 0] + pomaknjeny);	//dobimo začeno točko le-tega poligona
+
+				TextBlock ime = new TextBlock();	//inicializiramo nov text block
+				try
+				{
+					ime.Text = rastline.SelectedItem.ToString();
+
+					Thickness margin = ime.Margin;	//text block malo odmaknemo
+					margin.Left = tocka0.X + 20;
+					margin.Top = tocka0.Y + 20;
+
+					ime.Margin = margin;
+
+					ime.Foreground = new SolidColorBrush(Colors.Black);	//premenimo barvo
+
+					this.drugiGrid.Children.Add(ime);	//kreiramo text block
+
+					poz_rastlin[barva] = rastline.SelectedIndex;	//shranimo index izbrane rastline na določeno mesto
+				}
+				catch
+				{
+					napaka.Text = "Izberi rastlino";	//če rastlina ni izbrana nas opozori
+				}
+
+				break;
+			}
+		}
+	}
+}
