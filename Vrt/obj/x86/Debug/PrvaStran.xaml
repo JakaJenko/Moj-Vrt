@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Vrt.PrvaStran"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Vrt"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:ConnectionId='1' x:Name="novVrt" Content="Nov vrt" HorizontalAlignment="Center" VerticalAlignment="Top"                      Height="107" Width="273" FontSize="40" Margin="538,462,555,0"/>
+        <Button x:ConnectionId='2' x:Name="izberi_vrt" Content="Izberi vrt" HorizontalAlignment="Center" VerticalAlignment="Top" Height="107" Width="273" FontSize="40"                          Margin="538,607,555,0"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="MOJ VRT" VerticalAlignment="Top" FontSize="175" Width="738" Height="207" Margin="541,132,87,0" Foreground="#FF32A209" FontFamily="Gentium Book Basic"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Margin="214,67,0,0" VerticalAlignment="Top" Source="Assets/vecja_slika.png" Height="272" Width="274"/>
+    </Grid>
+</Page>
+

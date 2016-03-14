@@ -1,0 +1,35 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="Vrt.IzbiraVrta"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Vrt"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"                     >
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid x:Name="drugiGrid">
+            
+        </Grid>
+        <ComboBox x:ConnectionId='2' x:Name="vrtovi" HorizontalAlignment="Left" Margin="44,134,0,0" VerticalAlignment="Top" Width="295"                                            PlaceholderText="Izberi vrt"/>
+        <TextBlock x:Name="napaka" HorizontalAlignment="Left" Margin="44,554,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock x:Name="ime_vrta" HorizontalAlignment="Left" Margin="44,41,0,0" TextWrapping="Wrap" Text="Moj Vrt" VerticalAlignment="Top" FontSize="30"/>
+
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="149,390,0,0" TextWrapping="Wrap" Text="Dolžina" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="164,417,0,0" TextWrapping="Wrap" Text="Širina" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="44,506,0,0" TextWrapping="Wrap" Text="Razdelitev po dolžini" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="57,479,0,0" TextWrapping="Wrap" Text="Razdelitev po višini" VerticalAlignment="Top" FontSize="18"/>
+        
+        <TextBlock x:Name="sirina" HorizontalAlignment="Left" Margin="224,417,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="dolzinaRaz" HorizontalAlignment="Left" Margin="224,506,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="sirinaRaz" HorizontalAlignment="Left" Margin="224,479,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="dolzina" HorizontalAlignment="Left" Margin="224,390,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="18"/>
+        
+        <TextBlock x:Name="info" HorizontalAlignment="Left" Margin="44,319,0,0" TextWrapping="Wrap" Text="Informacije o vrtu" VerticalAlignment="Top" FontSize="30"/>
+        <Button x:ConnectionId='3' x:Name="button" Content="Nazaj" HorizontalAlignment="Left" Margin="41,601,0,0" VerticalAlignment="Top"                     />
+
+        <Button x:ConnectionId='4' x:Name="button1" Content="Uredi" HorizontalAlignment="Left" Margin="41,679,0,0" VerticalAlignment="Top"                      />
+
+    </Grid>
+</Page>
+

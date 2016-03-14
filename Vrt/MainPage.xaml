@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Vrt.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Vrt"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="40,40,0,0" TextWrapping="Wrap" Text="Vpis" VerticalAlignment="Top" FontSize="50"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="320,272,0,0" TextWrapping="Wrap" Text="Uporabniško ime" VerticalAlignment="Top" FontSize="25"/>
+        <TextBox x:Name="uporabnisko_ime" HorizontalAlignment="Left" Margin="583,270,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="446,337,0,0" TextWrapping="Wrap" Text="Geslo" VerticalAlignment="Top" FontSize="25"/>
+        <TextBox x:Name="geslo" HorizontalAlignment="Left" Margin="583,335,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <Button x:Name="prijava" Content="Prijava" HorizontalAlignment="Left" Margin="580,435,0,0" VerticalAlignment="Top" Click="prijava_Click"/>
+        <Button x:Name="register" Content="Registracija" HorizontalAlignment="Left" Margin="675,435,0,0" VerticalAlignment="Top" Click="register_Click"/>
+    </Grid>
+</Page>

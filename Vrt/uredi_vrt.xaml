@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="Vrt.uredi_vrt"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Vrt"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="Page_Loaded">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid x:Name="drugiGrid">
+            
+        </Grid>
+
+        <TextBlock x:Name="napaka" HorizontalAlignment="Left" Margin="44,554,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14"/>
+
+        <TextBlock x:Name="ime_vrta" HorizontalAlignment="Left" Margin="44,41,0,0" TextWrapping="Wrap" Text="Moj Vrt" VerticalAlignment="Top" FontSize="30"/>
+
+        <ComboBox x:Name="rastline" HorizontalAlignment="Left" Margin="38,191,0,0" VerticalAlignment="Top" Width="255"/>
+
+        <Button x:Name="button" Content="Shrani" HorizontalAlignment="Left" Margin="39,354,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="Nazaj" HorizontalAlignment="Left" Margin="41,412,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

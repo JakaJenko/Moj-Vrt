@@ -1,0 +1,7 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="j:\music projekt\projekt\projekt\vrt\vrt\obj\x86\debug\intermediatexaml\vrt.exe" HashGuid="d98df692-628a-3201-304c-c85b5aa6970b" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
+    <ReferenceAssembly PathName="f:\music projekt\projekt\projekt\vrt\packages\sqlitepcl.3.8.7.2\lib\netcore451\sqlitepcl.dll" HashGuid="a405761a-bd1d-dc16-54b5-36df2e9981c5" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

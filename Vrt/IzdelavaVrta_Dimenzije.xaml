@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="Vrt.IzdelavaVrta_Dimenzije"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Vrt"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="glavniGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid x:Name="drugiGrid">
+
+        </Grid>
+        <Button x:Name="dodaj" Content="Naredi" HorizontalAlignment="Left" Margin="134,408,0,0" VerticalAlignment="Top" Click="dodaj_Click"/>
+        <TextBox x:Name="velX" HorizontalAlignment="Left" Margin="146,269,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="velY" HorizontalAlignment="Left" Margin="146,348,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="78,363,0,0" TextWrapping="Wrap" Text="Širina" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="66,284,0,0" TextWrapping="Wrap" Text="Dolžina" VerticalAlignment="Top" FontSize="14"/>
+        <Button x:Name="naprej" Content="Naprej" HorizontalAlignment="Left" Margin="134,592,0,0" VerticalAlignment="Top" Click="naprej_Click"/>
+        <TextBlock x:Name="napaka" HorizontalAlignment="Left" Margin="44,493,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock x:Name="dimenzije" HorizontalAlignment="Left" Margin="44,35,0,0" TextWrapping="Wrap" Text="Dimenzije" VerticalAlignment="Top" FontSize="25" Foreground="Lime"/>
+        <TextBlock x:Name="dodajanje" HorizontalAlignment="Left" Margin="501,35,0,0" TextWrapping="Wrap" Text="Dodajanje" VerticalAlignment="Top" FontSize="25" Foreground="Red"/>
+        <TextBlock x:Name="razdelitev" HorizontalAlignment="Left" Margin="260,35,0,0" TextWrapping="Wrap" Text="Razdelitev" VerticalAlignment="Top" FontSize="25" Foreground="Red"/>
+        <TextBox x:Name="ime" HorizontalAlignment="Left" Margin="146,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="184"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="89,166,0,0" TextWrapping="Wrap" Text="Ime" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="215,284,0,0" TextWrapping="Wrap" Text="cm" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="215,363,0,0" TextWrapping="Wrap" Text="cm" VerticalAlignment="Top" FontSize="14"/>
+
+    </Grid>
+</Page>

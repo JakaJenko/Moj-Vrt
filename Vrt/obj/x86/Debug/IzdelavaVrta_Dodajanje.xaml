@@ -1,0 +1,26 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="Vrt.IzdelavaVrta_Dodajanje"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Vrt"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"                     >
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid x:Name="drugiGrid">
+            
+        </Grid>
+        <Button x:ConnectionId='2' x:Name="button" Content="Končaj" HorizontalAlignment="Left" Margin="51,375,0,0" VerticalAlignment="Top"                     />
+        <Button x:ConnectionId='3' x:Name="nazaj" Content="Nazaj - popravi" HorizontalAlignment="Left" Margin="51,319,0,0" VerticalAlignment="Top"                    />
+
+        <ComboBox x:Name="rastline" HorizontalAlignment="Left" Margin="38,191,0,0" VerticalAlignment="Top" Width="255"/>
+        <TextBlock x:Name="napaka" HorizontalAlignment="Left" Margin="44,493,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="44,150,0,0" TextWrapping="Wrap" Text="Izberi rastlino" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock x:Name="dimenzije" HorizontalAlignment="Left" Margin="44,35,0,0" TextWrapping="Wrap" Text="Dimenzije" VerticalAlignment="Top" FontSize="25" Foreground="Red"/>
+        <TextBlock x:Name="dodajanje" HorizontalAlignment="Left" Margin="501,35,0,0" TextWrapping="Wrap" Text="Dodajanje" VerticalAlignment="Top" FontSize="25" Foreground="Lime"/>
+        <TextBlock x:Name="razdelitev" HorizontalAlignment="Left" Margin="260,35,0,0" TextWrapping="Wrap" Text="Razdelitev" VerticalAlignment="Top" FontSize="25" Foreground="Red"/>
+
+    </Grid>
+</Page>
+
