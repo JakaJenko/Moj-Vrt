@@ -47,6 +47,7 @@ Dodatna aplikacija (link: )
 
 
 OPIS DELOV KODE:
+
 -Razdelitev vrta
 
 
