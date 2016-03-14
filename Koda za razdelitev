@@ -1,0 +1,127 @@
+private void button1_Click(object sender, RoutedEventArgs e) //začetek razdelitve
+        {
+            napaka.Text = "";
+
+            int razdeliPoX = Convert.ToInt32(razdeliX.Text);
+            int razdeliPoY = Convert.ToInt32(razdeliY.Text);
+
+            if (razdeliPoX > 4 || razdeliPoY > 4)	//preveri maximalno razdelitev
+            {
+                napaka.Text = "največja razdelitev je 4 x 4";
+            }
+            else
+            {
+                ZnacilnostiVrta.razdelitevX = razdeliPoX;	//shrani za kasnejšo uporabo (če želimo poraviti mere)
+                ZnacilnostiVrta.razdelitevY = razdeliPoY;
+
+                var mojPoli = (Polygon)this.glavniGrid.FindName("novPoligon");	//najdemo originalen poligon
+
+                PointCollection orgPoints = new PointCollection();	//shranitev točk originalnega - še ne razdeljenega poligona
+
+                try	//če razdeljujemo prvič (ne popravljamo) se originalne točke shranijo
+                {
+                    orgPoints = mojPoli.Points;
+
+                    orgPoints_copy = orgPoints;
+
+                    mojPoli.Points = null;	//originalne točke se odstranijo in tako naredimo prostor ta nov poligon
+                }
+                catch	//če razdeljujemo že drugič ali večič (popravljamo že razdeljen poligon) izberemo shranjene točke, saj original ne obstaja več zaradi izbrisa poligona
+                {
+                    orgPoints = orgPoints_copy;
+                }
+                
+
+                //razdeli po x
+                for (int x = 0; x <= razdeliPoX; x++)	//koordinate po x razdelimo na enako velike odseke (točke odmaknemo drugo od druge enakomerno) glede na število potrebnih točk
+                {
+                    koordinati[0, x] = ((orgPoints[1].X - pomaknjenx) / Convert.ToInt32(razdeliPoX)) * x;
+                }
+
+                //razdeli po y
+                for (int x = 0; x <= razdeliPoY; x++)	//koordinate po y razdelimo na enako velike odseke (točke odmaknemo drugo od druge enakomerno) glede na število potrebnih točk
+                {
+                    koordinati[x, 0] = ((orgPoints[3].Y - pomaknjeny) / Convert.ToInt32(razdeliPoY)) * x;
+                }
+
+
+                drugiGrid.Children.Clear();	//izbrišemo originaln poligon in naredimo prostor za razdeljene poligone
+
+                int y = 0;
+                int barva = 0;
+
+                for (int x = 0; ; x++)	//začnemo računanje vseh potrebnih točk
+                {
+                    barva++;	//določa barvo
+
+                    if (x == razdeliPoX)	//preveri ali smo že razdelili vse po x
+                    {
+                        x = 0;
+                        y++;
+                    }
+
+                    if (y == razdeliPoY)	//preveri ali smo že razdelili vse po y (takrat se tudi kočna)
+                    {
+                        break;
+                    }
+
+
+                    var newPolygon = new Polygon() { Name = "novPoligon" + barva };	//inicializacija novega poligona
+
+                    PointCollection points = new PointCollection();	//inicializacije nove skupine točk (za izris štirikotnika potrebujemo 4 točke)
+
+
+                    for (int i = 0; i < 4; i++)	//računanje točk
+                    {
+
+                        if (i == 0)	//glede na zaporedno št. koordinate uporabimo različno enačbo za itračun točke
+                        {
+                            Point tocka0 = new Point(koordinati[0, x] + pomaknjenx, koordinati[y, 0] + pomaknjeny);	//iz pred izračunanih točk izberemo prave točke
+                            points.Add(tocka0);	//dodamo točko skupini točk
+                        }
+                        else if (i == 1)
+                        {
+                            Point tocka1 = new Point(koordinati[0, x + 1] + pomaknjenx, koordinati[y, 0] + pomaknjeny);
+                            points.Add(tocka1);
+                        }
+                        else if (i == 2)
+                        {
+                            Point tocka2 = new Point(koordinati[0, x + 1] + pomaknjenx, koordinati[y + 1, 0] + pomaknjeny);
+                            points.Add(tocka2);
+                        }
+                        else
+                        {
+                            Point tocka3 = new Point(koordinati[0, x] + pomaknjenx, koordinati[y + 1, 0] + pomaknjeny);
+                            points.Add(tocka3);
+                        }
+                    }
+
+                    if (barva % 5 == 0)	//izbira barve
+                    {
+                        newPolygon.SetValue(Polygon.FillProperty, new SolidColorBrush(Colors.LightGreen));
+                    }
+                    else if (barva % 5 == 1)
+                    {
+                        newPolygon.SetValue(Polygon.FillProperty, new SolidColorBrush(Colors.DarkSeaGreen));
+                    }
+                    else if (barva % 5 == 2)
+                    {
+                        newPolygon.SetValue(Polygon.FillProperty, new SolidColorBrush(Colors.DarkGreen));
+                    }
+                    else if (barva % 5 == 3)
+                    {
+                        newPolygon.SetValue(Polygon.FillProperty, new SolidColorBrush(Colors.Green));
+                    }
+                    else
+                    {
+                        newPolygon.SetValue(Polygon.FillProperty, new SolidColorBrush(Colors.ForestGreen));
+                    }
+
+
+                    newPolygon.Points = points;	//določimo točke poligonu
+
+                    
+                    this.drugiGrid.Children.Add(newPolygon);	//kreiramo poligon
+                }
+            }
+        }
