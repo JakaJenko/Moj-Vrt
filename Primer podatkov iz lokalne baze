@@ -1,0 +1,21 @@
+Primer podatkov iz lokalne baze za shranjen vrt
+
+Ime = Domač vrt
+Velikost X = 500
+Velikost Y = 800
+Razdelitev X = 2
+Razdelitev Y = 3
+Rastline = 12,12,15,2,3,3
+
+
+Ne razulmljuve je le shranjevanje imen rastlin in njihovih pozicij v vrtu.
+Ker je vrt razdeljen na 2x3 se rastline razdelijo takole:
+
+12	12
+15	2
+3	3
+
+2 stolpca
+3 vrstice
+
+Število nam predtavlja ID rastline in tako dobimo ime rastline iz baze.
