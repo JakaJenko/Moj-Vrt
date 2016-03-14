@@ -52,6 +52,6 @@ OPIS DELOV KODE: <br/>
 https://github.com/JakaJenko/Moj-Vrt/blob/master/Koda%20za%20razdelitev <br/>
  <br/>
 -Shranjevanje pozicije rastlin v bazo <br/>
- <br/>
+ https://github.com/JakaJenko/Moj-Vrt/blob/master/Koda%20za%20shranjevanje%20rastline<br/>
  <br/>
 -Izris shranjenega vrta <br/>
