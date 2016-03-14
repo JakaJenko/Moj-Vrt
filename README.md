@@ -55,3 +55,6 @@ https://github.com/JakaJenko/Moj-Vrt/blob/master/Koda%20za%20razdelitev <br/>
  https://github.com/JakaJenko/Moj-Vrt/blob/master/Koda%20za%20shranjevanje%20rastline<br/>
  <br/>
 -Izris shranjenega vrta <br/>
+https://github.com/JakaJenko/Moj-Vrt/blob/master/Koda%20za%20izris%20shranjenega%20vrta <br/>
+ <br/>
+-Primer podatkov v bazi <br/>
