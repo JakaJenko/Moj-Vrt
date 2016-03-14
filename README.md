@@ -49,7 +49,7 @@ Dodatna aplikacija (link: )
 OPIS DELOV KODE:
 
 -Razdelitev vrta
-
+https://github.com/JakaJenko/Moj-Vrt/blob/master/Koda%20za%20razdelitev
 
 -Shranjevanje pozicije rastlin v bazo
 
