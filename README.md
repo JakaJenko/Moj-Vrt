@@ -2,7 +2,7 @@
 Prvi projekt pri predmetu: Napredna uporaba podatkovnih baz
 
 
-PRVI ZAGON KODE (z tem poskrbimo, da se bodo vse poti do datotek na novo generirale in
+PRVI ZAGON KODE (z tem poskrbimo, da se bodo vse poti do datotek na novo generirale in <br/>
 tako ne bo težav napakami kot so mankajoče datoteke):
 -V Visual studijo izberemo zavihek Build
 -kliknemo na podzavihek Rebuild soluton
@@ -40,17 +40,17 @@ Prvi del aplikacije - Izdelava vrta nam omogoča:
 -Razdeliti vrt (max. 4x4)
 -Dodati rastline v vrt
 
-Drugi del aplikacije - Pregled vrta nam omogoča
--Izbrati vrt iz lokalne podatkovne baze in pregledati njegovo velikost, razdelitev in dodane rastline
+Drugi del aplikacije - Pregled vrta nam omogoča <br/>
+-Izbrati vrt iz lokalne podatkovne baze in pregledati njegovo velikost, razdelitev in dodane rastline <br/>
 
-Dodatna aplikacija (link: )
-
-
-OPIS DELOV KODE:
-
--Razdelitev vrta
-https://github.com/JakaJenko/Moj-Vrt/blob/master/Koda%20za%20razdelitev
-
+Dodatna aplikacija (link: ) <br/>
+ <br/>
+ <br/>
+OPIS DELOV KODE: <br/>
+ <br/>
+-Razdelitev vrta <br/>
+https://github.com/JakaJenko/Moj-Vrt/blob/master/Koda%20za%20razdelitev <br/>
+ <br/>
 -Shranjevanje pozicije rastlin v bazo
 
 
