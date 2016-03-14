@@ -1,0 +1,20 @@
+//koda pred tem enaka kot za razdelitev
+
+using (var connection = new SQLiteConnection("baza_vrt.sqlite"))	//povezava z bazo
+{
+	using (var statement = connection.Prepare(@"SELECT ime FROM rastline WHERE id='" + poz_rastlin[barva-1] + "';"))	//dobimo ime rastline, ki spada v določen poligon (razdeljeni del vrta)
+	{
+		while (statement.Step() == SQLiteResult.ROW)
+		{
+			ime.Text = statement[0].ToString();
+		}
+	}
+}
+
+ime.Margin = margin;
+ime.FontSize = 20;
+ime.Foreground = new SolidColorBrush(Colors.Black);
+
+this.drugiGrid.Children.Add(newPolygon);
+
+this.drugiGrid.Children.Add(ime);	//dodamo text block
