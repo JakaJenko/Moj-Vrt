@@ -32,7 +32,7 @@ Projekt je sestavljen iz dveh delov in dodatne aplikacije: <br/>
 -Izdelava vrta <br/>
 -Pregled vrta <br/>
 -Dodatna aplikacija za nalaganje vrta na in iz Azure podatkovne baze <br/>
-(link: ) <br/>
+(link: https://github.com/vesolino/MojVrt) <br/>
 (podatkovna baza Azure: https://azurehowto101.wordpress.com/uvod-v-microsoft-azure/) <br/>
  <br/>
 Prvi del aplikacije - Izdelava vrta nam omogoča: <br/>
@@ -43,7 +43,7 @@ Prvi del aplikacije - Izdelava vrta nam omogoča: <br/>
 Drugi del aplikacije - Pregled vrta nam omogoča <br/>
 -Izbrati vrt iz lokalne podatkovne baze in pregledati njegovo velikost, razdelitev in dodane rastline <br/>
  <br/>
-Dodatna aplikacija (link: ) <br/>
+Dodatna aplikacija (link: https://github.com/vesolino/MojVrt) <br/>
  <br/>
  <br/>
 OPIS DELOV KODE: <br/>
